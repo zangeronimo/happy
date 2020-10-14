@@ -13,6 +13,9 @@
 /web/build
 /backend/build
 
+# uploads
+/backend/uploads
+
 # misc
 .DS_Store
 .env.local
