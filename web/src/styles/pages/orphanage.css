@@ -1,6 +1,7 @@
 #page-orphanage {
   display: flex;
   min-height: 100vh;
+  flex-direction: column;
 }
 
 #page-orphanage main {
@@ -171,4 +172,10 @@
 
 .orphanage-details .orphanage-details-content button.contact-button:hover {
   background: #36CF82;
+}
+
+@media (min-width: 700px) {
+  #page-orphanage {
+    flex-direction: row;
+  }
 }

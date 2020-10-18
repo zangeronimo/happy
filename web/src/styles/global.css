@@ -1,7 +1,11 @@
+:root {
+    font-size: 60%;
+}
+
 * {
     margin: 0;
     padding: 0;
-    box-size: border-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -10,5 +14,11 @@ body {
 }
 
 body, input, button, textarea {
-    font: 600 18px Nunito, sans-serif;
+    font: 600 1.8rem Nunito, sans-serif;
+}
+
+@media (min-width: 700px) {
+    :root {
+        font-size: 62.5%
+    }
 }

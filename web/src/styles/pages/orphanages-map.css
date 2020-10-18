@@ -4,35 +4,42 @@
 
     position: relative;
     display: flex;
+    flex-direction: column;
 }
 
 #page-map aside {
-    width: 440px;
     background: linear-gradient(329.54deg, #29B6D1 0%, #00C7C7 100%);
-    padding: 80px;
+    padding: 5px;
     
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
 }
 
+#page-map aside header {
+    max-width: 70%;
+}
+
+#page-map aside img {
+    width: 4.8rem;
+}
+
 #page-map aside h2 {
-    font-size: 40px;
+    font-size: 3.0rem;
     font-weight: 800;
-    line-height: 42px;
-    margin-top: 64px;
+    line-height: 3.2rem;
+    margin-top: 2.4rem;
 }
 
 #page-map aside p {
-    line-height: 28px;
-    margin-top: 24px;
+    line-height: 1.8rem;
+    margin-top: 1.4rem;
 }
 
 #page-map aside footer {
     display: flex;
     flex-direction: column;
 
-    line-height: 24px;
+    line-height: 1.8rem;
 }
 
 #page-map aside footer strong {
@@ -45,8 +52,8 @@
 
 #page-map .create-orphanage {
     position: absolute;
-    right: 40px;
-    bottom: 40px;
+    right: 15px;
+    bottom: 70px;
 
     z-index: 10;
 
@@ -98,4 +105,91 @@
 
 #page-map .map-popup .leaflet-popup-tip-container {
     display: none;
+}
+
+@media (min-width: 400px) {
+    #page-map {
+        flex-direction: row;
+    }
+
+    #page-map aside {
+        width: 200px;
+        flex-direction: column;
+    }
+
+    #page-map aside header {
+        max-width: 100%;
+    }
+
+    #page-map aside h2 {
+        font-size: 2.8rem;
+        font-weight: 800;
+        line-height: 3.4rem;
+        margin-top: 1.4rem;
+    }
+    
+    #page-map aside p {
+        line-height: 2.4rem;
+        margin-top: 2.4rem;
+    }
+    
+    #page-map aside footer {    
+        line-height: 2.4rem;
+    }
+
+    #page-map .create-orphanage {
+        right: 20px;
+        bottom: 20px;
+    }
+}
+
+@media (min-width: 700px) {
+
+    #page-map aside {
+        width: 440px;
+        padding: 80px;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #page-map aside h2 {
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 42px;
+        margin-top: 64px;
+    }
+    
+    #page-map aside p {
+        line-height: 28px;
+        margin-top: 24px;
+    }
+    
+    #page-map aside footer {
+        display: flex;
+        flex-direction: column;
+    
+        line-height: 24px;
+    }
+
+    #page-map .create-orphanage {
+        position: absolute;
+        right: 40px;
+        bottom: 40px;
+    
+        z-index: 10;
+    
+        width: 64px;
+        height: 64px;
+    
+        background: #15c3d6;
+        border-radius: 15px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        transition: background-color 0.2s;
+    }
 }

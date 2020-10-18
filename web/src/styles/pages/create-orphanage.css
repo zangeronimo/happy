@@ -1,5 +1,6 @@
 #page-create-orphanage {
   display: flex;
+  flex-direction: column;  
 }
 
 #page-create-orphanage main {
@@ -170,4 +171,10 @@ form.create-orphanage-form button.confirm-button svg {
 
 form.create-orphanage-form button.confirm-button:hover {
   background: #36CF82;
+}
+
+@media (min-width: 700px) {
+  #page-create-orphanage {
+    flex-direction: row;  
+  }
 }

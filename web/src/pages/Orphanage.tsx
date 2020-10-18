@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { FaWhatsapp } from "react-icons/fa";
 import { FiClock, FiInfo } from "react-icons/fi";
 import { Map, Marker, TileLayer } from "react-leaflet";
 import Sidebar from '../components/Sidebar';
